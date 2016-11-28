@@ -1,12 +1,11 @@
 @font-face {
-    font-family: RageItalic;
-    src: url('../fonts/RageItalic.ttf');
-}
-
-
-@font-face {
     font-family: Mistral;
     src: url('../fonts/Mistral Normal.ttf');
+}
+
+@font-face {
+    font-family: Huntsman;
+    src: url('../fonts/Huntsman.otf');
 }
 
 @font-face {
@@ -19,151 +18,123 @@
     src: url('../fonts/OpenSans.ttf');
 }
 
-header {
+header{
     position: relative;
     width: 100%;
     height: 150px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background-size: 100%;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
 }
 
-footer {
-	font-weight: bold;
-    clear: both;
-    float: left;
-    width: 100%;
-    height: 300px;
-}
-
-body, html {
-    padding: 5px;
-    margin: 0px;
-    color: #FFFFFF;
-    font-family: "Open Sans", sans-serif;
-    color:#000000;
-}
-
-
-.fon{
-	background: url("http://yevgen-pl.pp.ua/wp-content/uploads/2016/07/computersite1.jpg") no-repeat;
-	background-size: cover;
-	/*color:#FF8000;*/
-}
-
-
-.company_name{
-	font-weight: bold;
-	text-align: right;
-    font-family: Mistral, sans-serif;
-    float: left;
-    margin-left: 30px;
-    font-size: 3.3em;
-    line-height: 10px;
-    color: #FF0000;
-}
-.logo{
-	width: 80px;
+header img{
+    width: 80px;
     height: 80px;
-    float: left;
-    background: url("http://www.brandcrowd.com/gallery/brands/pictures/picture14372481507557.png") no-repeat;
-    background-size: contain;
 }
 
-a{
-	text-decoration: none;
-	color:#000000;
-}
-.tel{
-list-style-type: none;
-float: right;
-clear: right;
-padding-right: 15px;
-}
 
-.menu{
-	list-style-type: none;
-	height: 50px;
-    float: right;
-    display: flex;
-    align-items: center;
-	flex-direction: row;
-
-}
-
-.menu li{
-	font-weight: bold;
+header nav li{
     display:inline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0 20px;
-    height: 70px;
-    line-height: 70px;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+}
+
+nav li:hover{
+    background-color: #FFFFFF;
+}
+
+header .company-name{
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 3.3em;
+    line-height: 10px;
+}
+
+.company-name{
+    font-family: Mistral, sans-serif;
+    color: #FF0000;
+}
+
+.tel{
+     float: right;
+}
+
+.tel li{
+    list-style-type: none;
+}
+
+h2{
+    font-family: Exo, sans-serif;
+     color: #0000FF;   
+}
+
+h3{
+     font-family: Exo, sans-serif;
+     color: #0000FF;
+}
+
+body{
+    background: url("/images/fon.png") no-repeat;
+	background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    color: #000080;
+    padding: 10px 10px 10px 50px;
+    margin: 0px;
+}
+
+.col-6 img{
+    height: 200px;
+}
+
+button a:hover{
+    color:  #ff0000; 
+}
+
+a{
+    text-decoration: none;
+	color:#000000;
+}
+
+nav li{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#work li{
+	list-style-type: none;
+	line-height: 30px;
+	font-weight: bold; 
 }
 
 
-.menu a {
-    /*background: #FFFFFF;*/
-    border-left: none;
-    color:#000000;
+#work li:hover{
+    background-color: #c0c0c0;
 }
 
-button {
-	border-radius: 5px;
-	background-color:#C0C0C0;
-	color: #000000;
-
+#work li a:hover{
+    color: #ffffff;
 }
 
 .pictures {
-	/*float: right;*/
-	width: 20%;
-	min-height: 80px
+	height: 80px;
 }
 
-.content {
-    min-height: 100px;
-    width: 30%;
-    margin: 0 auto;
-    padding: 20px 0;
-
-}
-div {
-    margin-bottom: 15px;
-    padding: 10px 25px 10px 25px;
- }
-
-.left-column {
-    width: 45%;
-    min-height: 100px;
-    float: left;
-}
-.right-column {
-    width: 15%;
-    min-height: 100px;
-    float: right;
-
-}
-
-.work li{
-	list-style-type: none;
-	line-height: 30px;
-	font-weight: bold;
-	margin-left: 0px; 
-}
-
-
-
-blockquote{
-	width: 50%;
-    min-height: 100px;
-    color: #808080;
+form input:focus {
+    border-color: #0088cc;
 }
 
 fieldset{
 	border-color: #808080;
-	color:#000080;
 	background-color:#C0C0C0;
-	/*border-radius: 15px;*/
 	box-shadow: 3px 3px 4px #cccccc;
+}
+
+footer{
+    clear: both;
+    border-top: 6px solid red(255, 255, 255, 0.1);
 }
