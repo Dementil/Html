@@ -9,511 +9,528 @@
          <link rel="stylesheet" href="/css/grid_style.css">
 
 </head>
-    <body>
-        <h2>Анкета-заявка на создание сайта, веб студия "Оригами"</h2>
-            <p>
-                Для более четкого определения целей, стоящих перед Вашим будущим сайтом, мы предлагаем Вам заполнить эту анкету. Это поможет нам сформировать представление о Вашей компании, клиентах, а также Ваших предпочтениях и вкусах и эффективно подготовиться к работе.
-            </p>
-            <p>
-                Анкета не является техническим заданием и лишь помогает нам понять, каким Вы видите Ваш будущий сайт. Пожалуйста, вдумчиво и максимально подробно ответьте на вопросы, которые представлены ниже.
-            </p>
-            <p>
-                Если какие-либо из вопросов анкеты покажутся Вам сложными, обратитесь к нам за разъяснениями. Мы гарантируем Вам полную конфиденциальность представленной информации о Вас и о Вашей деятельности.
-            </p>
-            <button><a href="/pages/brif.html">Назад</a></button>
-            <button><a href="/">Главная</a></button>
-        <h3>Бизнес информация</h3>
-            <form action="/post.php" method="post" enctype="multipart/form-data"> <!-- action="адрес обработчика"-->
-                <fieldset>
-                    <label><b>1. Полное наименование компании:</b><br><br>
-                        <textarea name="name_companu" rows="2" cols="100">Наименование компании</textarea>
-                    </label><br><br>
-                    <b>2. Контактная информация</b><br>
-                            <ul>
-                                <li>
-                                    <label>
-                                        ФИО:<input type="text" name="user_name">
-                                    </label>
-                                </li><br>
-                                <li>
-                                    <label>
-                                        Телефон:<input type="text" name="tel">
-                                    </label>
-                                </li><br>
-                                <li>
-                                    <label>
-                                        E-mail:<input type="text" name="email">
-                                    </label>
-                                </li><br>
-                                <li>
-                                    <label>
-                                        Skype:<input type="text" name="skype">
-                                    </label>
-                                </li><br>
-                            </ul>
-                    <label>
-                        <b>3. Дата заполнения анкеты</b>
-                        <input type="date" name="calendar">
-                    </label>
-                </fieldset><br>
-            </form>
-        <h3>Общие вопросы</h3>
-            <form>
-                <fieldset>
-                    <ol>
-                        <li>
+    <body class="content">
+        <header>
+            <div class="row">
+                <div class="col-1 offset-11">
+                    <div class="logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="offset-1">
+                <h2>Анкета-заявка на создание сайта, веб студия "Оригами"</h2>
+                    <p>
+                        Для более четкого определения целей, стоящих перед Вашим будущим сайтом, мы предлагаем Вам заполнить эту анкету. Это поможет нам сформировать представление о Вашей компании, клиентах, а также Ваших предпочтениях и вкусах и эффективно подготовиться к работе.
+                    </p>
+                    <p>
+                        Анкета не является техническим заданием и лишь помогает нам понять, каким Вы видите Ваш будущий сайт. Пожалуйста, вдумчиво и максимально подробно ответьте на вопросы, которые представлены ниже.
+                    </p>
+                    <p>
+                        Если какие-либо из вопросов анкеты покажутся Вам сложными, обратитесь к нам за разъяснениями. Мы гарантируем Вам полную конфиденциальность представленной информации о Вас и о Вашей деятельности.
+                    </p>
+                    <button><a href="/pages/brif.html">Назад</a></button>
+                    <button><a href="/">Главная</a></button>
+                <h3>Бизнес информация</h3>
+                    <form action="/post.php" method="post" enctype="multipart/form-data"> <!-- action="адрес обработчика"-->
+                        <fieldset>
+                            <label><b>1. Полное наименование компании:</b><br><br>
+                                <textarea name="name_companu" rows="2" cols="100">Наименование компании</textarea>
+                            </label><br><br>
+                            <b>2. Контактная информация</b><br>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                ФИО:<input type="text" name="user_name">
+                                            </label>
+                                        </li><br>
+                                        <li>
+                                            <label>
+                                                Телефон:<input type="text" name="tel">
+                                            </label>
+                                        </li><br>
+                                        <li>
+                                            <label>
+                                                E-mail:<input type="text" name="email">
+                                            </label>
+                                        </li><br>
+                                        <li>
+                                            <label>
+                                                Skype:<input type="text" name="skype">
+                                            </label>
+                                        </li><br>
+                                    </ul>
                             <label>
-                                Какова область деятельности и специфика бизнеса Вашей компании?:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
+                                <b>3. Дата заполнения анкеты</b>
+                                <input type="date" name="calendar">
                             </label>
-                        </li>
-                        <li>
-                            <label>
-                                Причины создания сайта, основные задачи, стоящие перед новым сайтом:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Вы заказываете первый вариант сайта, или это редизайн предыдущей версии? <i>(Если это редизайн, то уточните, чем не устраивает старый вариант).</i><br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Опишите целевую аудиторию сайта. Какие слои населения заинтересованы в Вашей продукции или услугах?<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Каковы уникальные свойства товаров или услуг, которые отличают Вас от конкурентов? Опишите свои преимущества, отличия, ключевые моменты, которые Вы бы хотели в первую очередь донести до аудитории.<br><br>
-                                <textarea rows="5" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Пожалуйста, перечислите Ваших основных конкурентов <i>(желательно с адресами их сайтов)</i>:<br><br>
-                                <textarea rows="5" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Дайте Вашу оценку сайтам конкурентов <i>(положительные, отрицательные стороны)</i>:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Предполагаются ли публикация иностранных версий сайта <i>(если да, то сколько языков)?</i>:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>Требуются ли Вам дополнительные услуги?<i>(Поставьте отметку напротив необходимой услуги)</i>: <br><br>
-                            <ul>
+                        </fieldset><br>
+                    </form>
+                <h3>Общие вопросы</h3>
+                    <form>
+                        <fieldset>
+                            <ol>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Регистрация доменного имени
+                                        Какова область деятельности и специфика бизнеса Вашей компании?:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Размещение сайта в сети
+                                        Причины создания сайта, основные задачи, стоящие перед новым сайтом:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Постоянная техническая \ информационная \ дизайн-поддержка ресурса
+                                        Вы заказываете первый вариант сайта, или это редизайн предыдущей версии? <i>(Если это редизайн, то уточните, чем не устраивает старый вариант).</i><br><br>
+                                        <textarea rows="3" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Написание текстов для сайта
+                                        Опишите целевую аудиторию сайта. Какие слои населения заинтересованы в Вашей продукции или услугах?<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Рекламная кампания в интернете
+                                        Каковы уникальные свойства товаров или услуг, которые отличают Вас от конкурентов? Опишите свои преимущества, отличия, ключевые моменты, которые Вы бы хотели в первую очередь донести до аудитории.<br><br>
+                                        <textarea rows="5" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Поисковое продвижение сайта
+                                        Пожалуйста, перечислите Ваших основных конкурентов <i>(желательно с адресами их сайтов)</i>:<br><br>
+                                        <textarea rows="5" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Разработка логотипа \ фирменного стиля
+                                        Дайте Вашу оценку сайтам конкурентов <i>(положительные, отрицательные стороны)</i>:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="checkbox">
-                                        Услуги фотографа 
+                                        Предполагаются ли публикация иностранных версий сайта <i>(если да, то сколько языков)?</i>:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
                                     </label>
                                 </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox">
-                                        Дополнительно:<br>
-                                            <textarea rows="3" cols="100">Укажите интересующую Вас услугу</textarea></li>
-                                    </label>
-                                </li>
-                            </ul>
-                            <li>
-                                <label>
-                                    Выберите необходимые Вам функции и программные модули <i>(поставьте отметку напротив необходимого модуля):</i><br>
-                                    <input type="checkbox">
-                                </label>
-                                    Карта сайта (иерархический список всех значащих разделов)<br><br>
-                                    Поиск:<br>
+                                <li>Требуются ли Вам дополнительные услуги?<i>(Поставьте отметку напротив необходимой услуги)</i>: <br><br>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Регистрация доменного имени
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Размещение сайта в сети
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Постоянная техническая \ информационная \ дизайн-поддержка ресурса
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Написание текстов для сайта
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Рекламная кампания в интернете
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Поисковое продвижение сайта
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Разработка логотипа \ фирменного стиля
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Услуги фотографа 
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                Дополнительно:<br>
+                                                    <textarea rows="3" cols="100">Укажите интересующую Вас услугу</textarea></li>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <label>
+                                            Выберите необходимые Вам функции и программные модули <i>(поставьте отметку напротив необходимого модуля):</i><br>
+                                            <input type="checkbox">
+                                        </label>
+                                            Карта сайта (иерархический список всех значащих разделов)<br><br>
+                                            Поиск:<br>
+                                                <ul>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Обычный поиск по всем текстовым полям сайта<br>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            Система фильтров для умного поиска (аналог внутренней поисковой системы)<br>
+                                                        </label>
+                                                    </li>
+                                                </ul><br> 
+                                        <label>
+                                            <input type="checkbox">
+                                            Фотогалерея<br><br>
+                                        </label>
+                                            Схема проезда (расположение офисов):<br>
                                         <ul>
                                             <li>
                                                 <label>
                                                     <input type="checkbox">
-                                                    Обычный поиск по всем текстовым полям сайта<br>
+                                                    Иллюстрация<br>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label>
                                                     <input type="checkbox">
-                                                    Система фильтров для умного поиска (аналог внутренней поисковой системы)<br>
+                                                    Flash<br>
+                                                </label>
+                                            </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        Google Map<br>
+                                                    </label>
+                                                </li>
+                                        </ul><br> 
+                                        Статистика сайта:<br>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Стандартный счетчик посетителей<br>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Скрытая статистика посещений, скачиваний, просмотров и т.д.<br>
+                                                </label>
+                                            </li>
+                                        </ul><br>
+                                        Новости:<br>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Обычная загрузка новостей<br>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Категории новостей (сортировка новостей по тематике)<br>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Календарь (поиск новостей за определенное число, месяц, год)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox">
+                                                Подписка на новости (рассылка новостей пользователям)<br>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Экспорт в RSS
+                                                </label>
+                                            </li><br>
+                                        </ul>
+                                            <label>
+                                                <input type="checkbox">
+                                                Тэги (облако наиболее важных тем или разделов сайта)<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Download (скачать файлы, музыку, видео и т.д.)<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                FAQ (часто задаваемые вопросы)<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Голосование (опросы на сайте)<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Блог<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Калькулятор<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Анкета посетителя (форма запроса услуг или товаров – оформить заказ, например)<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Модуль случайного вывода (случайное фото, фраза, работа из портфолио и т.д.)<br><br>
+                                            </label>
+                                            <label>
+                                                <input type="checkbox">
+                                                Система баннеров (рекламных мест) на сайте<br><br>
+                                            </label>
+                                                Общение через сайт:<br>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Форма обратной связи
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Обмен сообщениями с администрацией сайта
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Обмен сообщениями между пользователями
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Комментирование (новостей, товаров, возможность оставить отзыв)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Форум
+                                                </label>
+                                            </li>
+                                        </ul><br>
+                                        Регистрация пользователей:<br>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Обычная регистрация пользователя
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Напомнить пароль (восстановление пароля пользователя)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Разграничение прав пользователям (гость, автор, редактор, администратор)
                                                 </label>
                                             </li>
                                         </ul><br> 
-                                <label>
-                                    <input type="checkbox">
-                                    Фотогалерея<br><br>
-                                </label>
-                                     Схема проезда (расположение офисов):<br>
-                                <ul>
-                                    <li>
+                                        Механизм интернет-магазина:<br>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Каталог продукции
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Корзина покупателя
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Наиболее покупаемые товары или новинки каталога
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Сопутствующие товары и товары, покупаемые с другим товаром
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Электронная система платежей (пластиковые карты, эл. деньги и т. д.)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Импорт прайс-листа из Microsoft Excel
+                                                </label>
+                                            </li>
+                                        </ul><br>
+                                        Мультимедиа элементы:<br>
+                                        <ul>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Видео на сайте
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Аудио на сайте
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Flash на сайте
+                                                </label>
+                                            </li>
+                                        </ul>
                                         <label>
-                                            <input type="checkbox">
-                                            Иллюстрация<br>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Flash<br>
-                                        </label>
-                                    </li>
-                                        <li>
-                                            <label>
                                                 <input type="checkbox">
-                                                Google Map<br>
-                                            </label>
-                                        </li>
-                                </ul><br> 
-                                Статистика сайта:<br>
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Стандартный счетчик посетителей<br>
+                                                Другое:<br>
+                                                    <textarea rows="3" cols="100">Укажите интересующую Вас опцию</textarea></li>
                                         </label>
                                     </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Скрытая статистика посещений, скачиваний, просмотров и т.д.<br>
-                                        </label>
-                                    </li>
-                                </ul><br>
-                                Новости:<br>
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Обычная загрузка новостей<br>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Категории новостей (сортировка новостей по тематике)<br>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Календарь (поиск новостей за определенное число, месяц, год)
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox">
-                                        Подписка на новости (рассылка новостей пользователям)<br>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Экспорт в RSS
-                                        </label>
-                                    </li><br>
-                                </ul>
+                                </li>
+                            </ol>
+                            </fieldset>
+                    </form>
+                        <h3>Дизайн сайта</h3> 
+                    <form>
+                        <fieldset>
+                        <ol>
+                            <li>
+                                    Охарактеризуйте настроение Вашего будущего сайта.  Отметьте наиболее близкое Вам решение или опишите свой вариант в свободной форме ниже.<br>
                                     <label>
                                         <input type="checkbox">
-                                        Тэги (облако наиболее важных тем или разделов сайта)<br><br>
+                                        Строгий корпоративный дизайн<br>
                                     </label>
                                     <label>
                                         <input type="checkbox">
-                                        Download (скачать файлы, музыку, видео и т.д.)<br><br>
+                                        Дизайн с применением ярких броских цветовых решений<br>
+                                    </label>
+                                    <label> 
+                                        <input type="checkbox">
+                                        Однотонный дизайн с парой ярких оттенков<br>
                                     </label>
                                     <label>
                                         <input type="checkbox">
-                                        FAQ (часто задаваемые вопросы)<br><br>
+                                        Позитивный веселый дизайн<br>
                                     </label>
                                     <label>
                                         <input type="checkbox">
-                                        Голосование (опросы на сайте)<br><br>
+                                        Минималистический дизайн с упором на функциональность<br>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
-                                        Блог<br><br>
+                                            Ваш вариант:<br>
+                                            <textarea rows="3" cols="100">Укажите Ваши пожелания по дизайну</textarea>
                                     </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        Калькулятор<br><br>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        Анкета посетителя (форма запроса услуг или товаров – оформить заказ, например)<br><br>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        Модуль случайного вывода (случайное фото, фраза, работа из портфолио и т.д.)<br><br>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox">
-                                        Система баннеров (рекламных мест) на сайте<br><br>
-                                    </label>
-                                        Общение через сайт:<br>
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Форма обратной связи
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Обмен сообщениями с администрацией сайта
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Обмен сообщениями между пользователями
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Комментирование (новостей, товаров, возможность оставить отзыв)
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Форум
-                                        </label>
-                                    </li>
-                                </ul><br>
-                                Регистрация пользователей:<br>
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Обычная регистрация пользователя
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Напомнить пароль (восстановление пароля пользователя)
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Разграничение прав пользователям (гость, автор, редактор, администратор)
-                                        </label>
-                                    </li>
-                                </ul><br> 
-                                Механизм интернет-магазина:<br>
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                               Каталог продукции
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Корзина покупателя
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Наиболее покупаемые товары или новинки каталога
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Сопутствующие товары и товары, покупаемые с другим товаром
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Электронная система платежей (пластиковые карты, эл. деньги и т. д.)
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Импорт прайс-листа из Microsoft Excel
-                                        </label>
-                                    </li>
-                                </ul><br>
-                                  Мультимедиа элементы:<br>
-                                <ul>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                               Видео на сайте
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Аудио на сайте
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox">
-                                            Flash на сайте
-                                        </label>
-                                    </li>
-                                </ul>
-                                <label>
-                                        <input type="checkbox">
-                                        Другое:<br>
-                                            <textarea rows="3" cols="100">Укажите интересующую Вас опцию</textarea></li>
-                                </label>
                             </li>
-                        </li>
-                    </ol>
-                    </fieldset>
-            </form>
-                <h3>Дизайн сайта</h3> 
-            <form>
-                <fieldset>
-                   <ol>
-                       <li>
-                            Охарактеризуйте настроение Вашего будущего сайта.  Отметьте наиболее близкое Вам решение или опишите свой вариант в свободной форме ниже.<br>
-                            <label>
-                                <input type="checkbox">
-                                Строгий корпоративный дизайн<br>
-                            </label>
-                            <label>
-                                <input type="checkbox">
-                                Дизайн с применением ярких броских цветовых решений<br>
-                            </label>
-                            <label> 
-                                <input type="checkbox">
-                                Однотонный дизайн с парой ярких оттенков<br>
-                            </label>
-                            <label>
-                                <input type="checkbox">
-                                Позитивный веселый дизайн<br>
-                            </label>
-                            <label>
-                                 <input type="checkbox">
-                                Минималистический дизайн с упором на функциональность<br>
-                            </label>
-                            <label>
-                                    Ваш вариант:<br>
-                                    <textarea rows="3" cols="100">Укажите Ваши пожелания по дизайну</textarea>
-                            </label>
-                       </li>
-                       <li>
-                            <label>
-                                Наличие у компании фирменного стиля, нужно ли его учесть в разработке дизайна сайта:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Общая цветовая палитра сайта <i>(например: светлая, легкая, спокойная):</i><br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Недопустимые к использованию символы, образы, слова и прочее:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Сайты любой тематики, которые Вам нравятся (по любым причинам) и комментарий:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Сайты любой тематики, которые Вам НЕ нравятся (по любым причинам) и комментарий:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                   </ol>
-                   </fieldset> 
-            </form>
-        <h3>Дополнительные вопросы</h3>
-         <form>
-            <fieldset>
-                   <ol>
-                       <li>
-                            <label>
-                                Предельные сроки создания сайта (максимальные):<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта:<br><br>
-                                <textarea rows="3" cols="100"></textarea>
-                            </label>
-                        </li>
-                   </ol>
-            </fieldset><br> 
-        </form>
-            <form>
-                <label>
-                    <input type="submit" name="button" value="Отправить">
-                </label>
-            </form>
-            <p>Благодарим Вас за заполнение анкеты.</p>
-            <p>C уважением и надеждой на сотрудничество, веб-студия "Оригами"</p>
+                            <li>
+                                    <label>
+                                        Наличие у компании фирменного стиля, нужно ли его учесть в разработке дизайна сайта:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        Общая цветовая палитра сайта <i>(например: светлая, легкая, спокойная):</i><br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        Недопустимые к использованию символы, образы, слова и прочее:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        Сайты любой тематики, которые Вам нравятся (по любым причинам) и комментарий:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        Сайты любой тематики, которые Вам НЕ нравятся (по любым причинам) и комментарий:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                        </ol>
+                        </fieldset> 
+                    </form>
+                <h3>Дополнительные вопросы</h3>
+                <form>
+                    <fieldset>
+                        <ol>
+                            <li>
+                                    <label>
+                                        Предельные сроки создания сайта (максимальные):<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        Укажите все, что, с Вашей точки зрения, может уточнить задачу по разработке сайта:<br><br>
+                                        <textarea rows="3" cols="100"></textarea>
+                                    </label>
+                                </li>
+                        </ol>
+                    </fieldset><br> 
+                </form>
+                    <form>
+                        <label>
+                            <input type="submit" name="button" value="Отправить">
+                        </label>
+                    </form>
+                    <div class="label_f">
+                        <p>Благодарим Вас за заполнение анкеты.</p>
+                        <p>C уважением и надеждой на сотрудничество, веб-студия "Оригами"</p>
+                    </div>
+        </div>
+    </div>
+    <footer class="f_pages">
+        <div class="company-name col-6 offset-5"><p>&copy; Веб студия &#171;Оригами&#187;. Разработчик: Дементьев Илья</p></div>
+     </footer>
     </body>
 </html>

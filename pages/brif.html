@@ -6,97 +6,76 @@
         <meta name="keywords" content="создание сайтов, веб-студия">
         <meta name="description" content="Веб-студия Оригами. Мы занимаемся: разработкой корпоративных сайтов, Созданием интеренет магазинов, Seo продвижением сайтов в ТОП">
          <link rel="stylesheet" href="/css/style.css">
-         <link rel="stylesheet" href="/css/grid_style.css">
 </head>
-    <body>
-        <header>
-            <div class="col-1">
-                <img src="http://www.brandcrowd.com/gallery/brands/pictures/picture14372481507557.png" alt="Логотип компании" title="Веб студия &laquoОригами&raquo, создание веб сайтов под ключ">
-            </div>
-                <p class="company-name col-5 offset-1">Веб студия "Оригами"</p>
-            <div class="col-4 offset-1">
-                <nav>  
-                    <ul>
-                        <li><a href="/pages/Services.html">Услуги</a></li>
-                        <li><a href="/pages/About_company.html">О компании</a></li>
-                        <li><a href="/">Главная</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="tel">
-                <ul>
-                    <li><a href="tel:+7(812)-00-00-000">+7(812) 00-00-000</a></li>
-                    <li><a href="tel:+7(495) 11-11-111">+7(495) 11-11-111</a></li>
-                </ul>
-            </div>
-        </header>
-        <h2>Заявка на создание сайта, веб студия "Оригами"</h2>
-        <p>Для оформения заявки на создание сайта Вы можете оставить нам свои контактные данные, наш менеджер свяжется с Вами, примет Вашу заявку и проконсультирует по всем интересующим Вас вопросам либо Вы можете самостоятельно заполнить подробную анкету-заявку:</p>
-        <button><a href="/pages/forms.html">Перейти к заполнению анкеты</a></button></br><br>
-
-            <h3>Заполните свои контакты:</h3>
-
-            <form action="/post.php" method="post" enctype="multipart/form-data"> <!-- action="адрес обработчика"-->
-                <fieldset>
-                    <label><b>1. Полное наименование компании:</b><br><br>
-                        <textarea name="name_companu" rows="2" cols="100">Наименование компании</textarea>
-                    </label><br><br>
-                    <b>2. Контактная информация</b><br>
+    <body class="fon">
+        <div class="content">
+            <div class="wnd-modal">
+                <div class="wnd">
+                    <div class="wnd-header">
+                    <span class="close"><li><a href="/">Закрыть</a></span>
+                </div>
+                <div class="wnd-body">
+                    <header>
+                        <div class="row">
+                            <div class="col-1 offset-1">
+                                <div class="logo"></div>
+                            </div>
+                        </div>
+                        <!--<div class="tel">
                             <ul>
-                                <li>
-                                    <label>
-                                        ФИО:<input type="text" name="user_name">
-                                    </label>
-                                </li><br>
-                                <li>
-                                    <label>
-                                        Телефон:<input type="text" name="tel">
-                                    </label>
-                                </li><br>
-                                <li>
-                                    <label>
-                                        E-mail:<input type="text" name="email">
-                                    </label>
-                                </li><br>
-                                <li>
-                                    <label>
-                                        Skype:<input type="text" name="skype">
-                                    </label>
-                                </li><br>
+                                <li><a href="tel:+7(812)-00-00-000">+7(812) 00-00-000</a></li>
+                                <li><a href="tel:+7(495) 11-11-111">+7(495) 11-11-111</a></li>
                             </ul>
-                    <label>
-                        <b>3. Дата заполнения анкеты</b>
-                        <input type="date" name="calendar">
-                    </label>
-                    <label>
-                    <input type="submit" name="button" value="Отправить">
-                </label>
-                </fieldset>
-            </form>
-        <hr>
-    <footer>
-       <div class="col-6">
-            <p>Наш адрес: г. Санкт-Петербург, ул. Ломоносова д. 9, оф. 215</p>
-            <p>Телефон:<a href="tel:+7(812)-00-00-000">+7(812) 00-00-000</a></p>
+                        </div>-->
+                    </header>
+                    <div class="row">
+                        <div class="offset-1">
+                            <h2>Заявка на создание сайта, веб студия "Оригами"</h2>
+                                <p>Для оформения заявки на создание сайта Вы можете оставить нам свои контактные данные, наш менеджер свяжется с Вами, примет Вашу заявку и проконсультирует по всем интересующим Вас вопросам либо Вы можете самостоятельно заполнить подробную анкету-заявку:</p>
+                                    <button><a href="/pages/forms.html">Перейти к заполнению анкеты</a></button></br><br>
+                            <h3>Заполните свои контакты:</h3>
+                                <form action="/post.php" method="post" enctype="multipart/form-data"> <!-- action="адрес обработчика"-->
+                                    <fieldset>
+                                        <label><b>1. Полное наименование компании:</b><br><br>
+                                            <textarea name="name_companu" rows="2" cols="100">Наименование компании</textarea>
+                                        </label><br><br>
+                                        <b>2. Контактная информация</b><br>
+                                                <ul>
+                                                    <li>
+                                                        <label>
+                                                            ФИО:<input type="text" name="user_name">
+                                                        </label>
+                                                    </li><br>
+                                                    <li>
+                                                        <label>
+                                                            Телефон:<input type="text" name="tel">
+                                                        </label>
+                                                    </li><br>
+                                                    <li>
+                                                        <label>
+                                                            E-mail:<input type="text" name="email">
+                                                        </label>
+                                                    </li><br>
+                                                    <li>
+                                                        <label>
+                                                            Skype:<input type="text" name="skype">
+                                                        </label>
+                                                    </li><br>
+                                                </ul>
+                                        <label>
+                                            <b>3. Дата заполнения анкеты</b>
+                                            <input type="date" name="calendar">
+                                        </label>
+                                        <label>
+                                        <input type="submit" name="button" value="Отправить">
+                                    </label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-5 offset-1">
-            <table>
-                <caption>Карта сайта:</caption>
-                    <tr> 
-                        <td><a href="/">Главная</a></td>
-                        <td><a href="/pages/About_company.html">О компании</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/pages/Services.html">Услуги</a></td>
-                        <td><a href="/#work">Наши работы</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/pages/brif.html">Заявка на создание сайта</a></td>
-                        <td><a href="/pages/forms.html">Заполнить анкету на создание сайта</a></td>
-                    </tr>
-            </table>
-        </div>
-        <div class="company-name col-6 offset-5"><p>&copy; Веб студия "Оригами"</p></div>
-     </footer>
 </body>
 </html>
