@@ -96,3 +96,9 @@
 .offset-12{
     margin-left: calc(12/12*100%);
 }
+
+@media only screen and (max-width: 37.5em) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
