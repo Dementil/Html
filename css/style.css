@@ -56,8 +56,12 @@ a {
     float: right;
 }
 
+body{
+    background-repeat: no-repeat;
+}
+
 .content{
-    background: url("/images/content.jpg") no-repeat;
+    background-image: url("/images/content.jpg");
 	background-size: cover;
 }
 
@@ -153,9 +157,6 @@ fieldset{
 
 
 
-
-
-
 /*Стили модального окна*/
 .modal-header h2 {
     color: #555;  
@@ -204,9 +205,9 @@ fieldset{
     display: block;
 }
 .modal-open:checked ~ .modal-wrap .modal-dialog {
-    -webkit-transform: translate(-50%, 0);
+    /*-webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);*/
     transform: translate(-50%, 0);
     top: 20%;
 }
@@ -218,13 +219,13 @@ fieldset{
     position: fixed;
     left: 50%;
     top: -100%;
-    -webkit-transform: translate(-50%, -500%);
+    /*-webkit-transform: translate(-50%, -500%);
     -ms-transform: translate(-50%, -500%);
-    -o-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);*/
     transform: translate(-50%, -500%);
-    -webkit-transition: -webkit-transform 0.4s ease-out;
+    /*-webkit-transition: -webkit-transform 0.4s ease-out;
     -moz-transition: -moz-transform 0.4s ease-out;
-    -o-transition: -o-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;*/
     transition: transform 0.4s ease-out;
     width: 80%;
     max-width: 500px;
@@ -307,7 +308,7 @@ fieldset{
     box-sizing:border-box;
     -moz-border-radius: 3px;
     font-size:14px;
-    -webkit-border-radius: 3px;
+   /* -webkit-border-radius: 3px;*/
     border-radius: 3px; 
     display:block;
     padding:10px;
